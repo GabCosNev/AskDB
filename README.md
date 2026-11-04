@@ -29,7 +29,6 @@ askdb/
 │   ├── config.py        # configurações e variáveis de ambiente
 │   ├── repository.py    # leitura e filtro dos dados
 │   ├── llm.py           # cliente Groq e chamada ao modelo
-│   ├── prompts.py       # system prompt e montagem do prompt
 │   └── schemas.py       # modelos de request/response
 ├── sample_data/
 │   └── events.json      # dados de exemplo
