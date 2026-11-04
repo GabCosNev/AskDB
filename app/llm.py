@@ -1,16 +1,32 @@
+import json
+
 from groq import Groq
+
 from app.config import MODEL
-from app.prompts import SYSTEM_PROMPT, build_user_prompt
 
 client = Groq()
-
 
 def ask(events: list[dict], question: str) -> str:
     response = client.chat.completions.create(
         model=MODEL,
         messages=[
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": build_user_prompt(events, question)},
+            {
+                "role": "system",
+                "content": (
+                    "Você é um assistente de eventos. "
+                    "Responda somente com base nos eventos fornecidos. "
+                    "Não invente eventos, datas ou informações. "
+                    "Se não houver evento correspondente, informe que não encontrou."
+                ),
+            },
+            {
+                "role": "user",
+                "content": (
+                    "Eventos disponíveis:\n"
+                    f"{json.dumps(events, ensure_ascii=False)}\n\n"
+                    f"Pergunta: {question}"
+                ),
+            },
         ],
         stream=False,
     )

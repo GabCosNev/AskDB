@@ -9,7 +9,7 @@ app = FastAPI(
     version="1.0.0",
 )
 
-@app.post("/ask", response_model=AnswerResponse)
-def ask_question(body: QuestionRequest):
+@app.post("/ask")
+def ask_question(body: QuestionRequest) -> AnswerResponse:
     events = get_approved_events()
     return AnswerResponse(answer=ask(events, body.question))
