@@ -34,5 +34,51 @@
     "status": "PENDING",
     "startDate": "2027-06-20T14:00:00-03:00",
     "endDate": "2027-06-20T17:00:00-03:00"
+  },
+
+    {
+    "id": 5,
+    "title": "Lançamento do Aplicativo Mobile do Mural",
+    "content": "Anúncio do novo aplicativo para celular, com notificações em tempo real e login biométrico.",
+    "eventType": "ANNOUNCEMENT",
+    "status": "APPROVED",
+    "startDate": "2027-05-12T10:00:00-03:00",
+    "endDate": "2027-05-12T11:00:00-03:00"
+  },
+  {
+    "id": 6,
+    "title": "Mudança no Horário da Secretaria",
+    "content": "A secretaria passa a atender das 8h às 16h a partir da próxima segunda-feira.",
+    "eventType": "ANNOUNCEMENT",
+    "status": "APPROVED",
+    "startDate": "2027-05-18T08:00:00-03:00",
+    "endDate": "2027-05-18T09:00:00-03:00"
+  },
+  {
+    "id": 7,
+    "title": "Hackathon de Programação",
+    "content": "Maratona de desenvolvimento de software em equipes, com mentoria e premiação.",
+    "eventType": "CELEBRATION",
+    "status": "APPROVED",
+    "startDate": "2027-06-05T09:00:00-03:00",
+    "endDate": "2027-06-06T18:00:00-03:00"
+  },
+  {
+    "id": 8,
+    "title": "Computação em Nuvem na Prática",
+    "content": "Palestra sobre deploy de aplicações, containers e serviços gerenciados na nuvem.",
+    "eventType": "LECTURE",
+    "status": "APPROVED",
+    "startDate": "2027-06-12T15:00:00-03:00",
+    "endDate": "2027-06-12T17:00:00-03:00"
+  },
+  {
+    "id": 9,
+    "title": "Festa Junina da Comunidade",
+    "content": "Comemoração com quadrilha, comidas típicas e brincadeiras para toda a família.",
+    "eventType": "CELEBRATION",
+    "status": "REJECTED",
+    "startDate": "2027-06-26T17:00:00-03:00",
+    "endDate": "2027-06-26T22:00:00-03:00"
   }
 ]
