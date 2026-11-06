@@ -1,6 +1,6 @@
 # AskDB
 
-API de consulta inteligente que usa **RAG** e a **Groq API** para responder perguntas em linguagem natural a partir de dados de eventos.
+API de consulta inteligente que usa **RAG** e a **Groq API** para responder perguntas em linguagem natural a partir de dados de eventos, programa para testes.
 
 > Ask your database anything.
 
@@ -91,17 +91,3 @@ curl -X POST http://127.0.0.1:8000/ask \
   "answer": "Encontrei as seguintes palestras sobre inteligência artificial: ..."
 }
 ```
-
-## Roadmap
-
-- [x] Consulta com contexto fixo (eventos aprovados)
-- [x] API com FastAPI
-- [ ] Retriever para buscar apenas os eventos relevantes (busca por palavra-chave)
-- [ ] Busca semântica com embeddings
-- [ ] Integração com banco de dados real
-- [ ] Testes automatizados
-- [ ] Front-end de consumo
-
-## Licença
-
-MIT
